@@ -1,37 +1,6 @@
-RSA Factoring Challenge\
-\
-0.Factorize all the things!
-#### 0\. Factorize all the things!#advanced
+RSA-Factoring is an attack against the RSA public-key cryptosystem that aims to factorize the modulus (N) into its prime factors (p and q). The security of RSA relies on the assumption that factoring large numbers into their prime factors is a difficult problem, and therefore, it is computationally infeasible to determine the private key from the public key.
 
-Factorize as many numbers as possible into a product of two smaller numbers.
+RSA-Factoring involves finding the two prime numbers (p and q) that multiply to form the modulus (N). Once p and q are known, it is relatively easy to calculate the private key and decrypt any message encrypted using the corresponding public key.
 
--   Usage:`factors <file>`
-    -   where`<file>`is a file containing natural numbers to factor.
-    -   One number per line
-    -   You can assume that all lines will be valid natural numbers greater than 1
-    -   You can assume that there will be no empy line, and no space before and after the valid number
-    -   The file will always end with a new line
--   Output format:`n=p*q`
-    -   one factorization per line
-    -   `p`and`q`don't have to be prime numbers
-    -   See example
--   You can work on the numbers of the file in the order of your choice
--   Your program should run without any dependency: You will not be able to install anything on the machine we will run your program on
--   Time limit: Your program will be killed after 5 seconds if it hasn't finish
--   Push all your scripts, source code, etc... to your repository
-    -   we will only run your executable`factors`
-
-#### 1\. RSA Factoring Challenge#advanced
-
-RSA Laboratories states that: for each RSA number`n`, there exist prime numbers`p`and`q`such that
-
-`n`=`p`×`q`. The problem is to find these two primes, given only`n`.
-
-This task is the same as task 0, except:
-
--   `p`and`q`are always prime numbers
--   There is only one number in the files
-
-How far can you go in less than 5 seconds?
-
--   Read:[RSA Factoring Challenge](https://intranet.hbtn.io/rltoken/8F5ClnjOFgDcNZXxeyrHxg "RSA Factoring Challenge")
+The best-known classical algorithm for factoring large integers is the General Number Field Sieve (GNFS), which is a complex and time-consuming process. However, advancements in quantum computing have shown that it may be possible to factor large numbers much faster than classical algorithms can. This means that RSA-Factoring could become a serious threat to the security of RSA if large-scale quantum computers become available in the future. 
+this project is done by oyizaa
